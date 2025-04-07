@@ -754,7 +754,8 @@ if (normalizedPath === "" || normalizedPath === "/index.html" || normalizedPath 
 
   
 
-} else if(currentPage.includes('/brands/')) {
+} else if (currentPage.startsWith('/coreHome-website/brands/')) {
+  
     document.getElementById("goBack").addEventListener("click", function(event) {
         event.preventDefault();
         history.back();
