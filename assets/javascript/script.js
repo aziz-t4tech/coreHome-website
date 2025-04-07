@@ -155,7 +155,8 @@ function setupBottomLastSliders() {
     });
 }
 
-let myHeader = document.getElementById("header");
+if (currentPage.includes("index.html") || currentPage === "/") {
+    let myHeader = document.getElementById("header");
 
     window.addEventListener("scroll", function() {
     if (window.pageYOffset > 695) {
@@ -665,3 +666,198 @@ let myHeader = document.getElementById("header");
     });
 
     setUpSearchToggle();
+
+} else if (currentPage.includes("/our_brands.html")) {
+    // NAVIGATION SCROLL BEHAVIOR
+    initializeNavigationAndAnimations();
+
+    // BOTTOM LAST SLIDERS
+    setupBottomLastSliders();
+
+} else if (currentPage.includes("/innovation.html")) {
+    // NAVIGATION SCROLL BEHAVIOR
+    initializeNavigationAndAnimations();
+
+    gsap.from("#innovation .content-background h2", {
+        y: 100,
+        duration: 1,
+    });
+
+} else if (currentPage.includes("/contact.html")) {
+    // NAVIGATION SCROLL BEHAVIOR
+    initializeNavigationAndAnimations();
+
+    gsap.from("#contactUs .content-background h2", {
+        y: 100,
+        duration: 1,
+    });
+} else if (currentPage.includes("/news-and-press.html")) {
+    initializeNavigationAndAnimations();
+
+    setUpSearchToggle();
+
+    // Banner fade out
+    gsap.from(".newsAndPressBanner", {
+        scale: 1, // zoom-out effect
+    });
+
+    gsap.to(".newsAndPressBanner", {
+        opacity: 0,
+        scale: 0.90, // zoom-out effect
+        transformOrigin: "center center", // scale from center
+        scrollTrigger: {
+          trigger: ".newsAndPressBanner",
+          start: "top top",      // start immediately
+          end: "bottom top",     // end when banner goes out
+          scrub: true,
+        }
+    });
+      
+
+    // Text slide down
+    // Text move down starts from top
+    gsap.to(".newsAndPressBanner .para, .newsAndPressBanner .newsAndPressTitle", {
+        y: 300,
+        scrollTrigger: {
+        trigger: ".newsAndPressBanner",
+        start: "top+=100 top",
+        end: "bottom top",
+        scrub: true,
+        }
+    });
+    
+    // Opacity fade starts after 100px scroll
+    gsap.to(".newsAndPressBanner .para, .newsAndPressBanner .newsAndPressTitle", {
+        opacity: 0,
+        scrollTrigger: {
+        trigger: ".newsAndPressBanner",
+        start: "top+=200 top", // starts fading after 100px
+        end: "bottom top",
+        scrub: true,
+        }
+    });
+
+    gsap.from(".clean-mama-partners", {
+        y: 150,
+        scrollTrigger: {
+          trigger: ".clean-mama-partners",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        }
+    });
+      
+
+
+  
+
+} else if(currentPage.startsWith('/brands/')) {
+    document.getElementById("goBack").addEventListener("click", function(event) {
+        event.preventDefault();
+        history.back();
+    });
+
+    // Get elements
+    const modal = document.querySelector('.gallery-modal');
+    const mainImage = document.querySelector('.gallery-modal-main-image');
+    const galleryImages = document.querySelectorAll('.gallery .wrap img'); // Select all gallery images
+    const prevButton = document.querySelector('.gallery-modal-prev');
+    const nextButton = document.querySelector('.gallery-modal-next');
+    const closeButton = document.querySelector('.gallery-modal-close');
+    const thumbnailsContainer = document.querySelector('.gallery-modal-thumbnails');
+
+    let currentImageIndex = 0;
+    let images = Array.from(galleryImages).map(img => img.src);
+
+    // Open modal when clicking on any gallery image
+    galleryImages.forEach((img, index) => {
+        img.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent event bubbling
+            currentImageIndex = index;
+            openModal();
+        });
+    });
+
+    // Open the modal
+    function openModal() {
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        updateModal();
+        modal.classList.add('active');
+    }
+
+    // Close modal
+    function closeModal() {
+        document.body.style.overflow = ''; // Re-enable scrolling
+        modal.classList.remove('active');
+    }
+
+    // Close modal when clicking on close button
+    closeButton.addEventListener('click', closeModal);
+
+    // Close modal when clicking outside of content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Navigate to the previous image
+    prevButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        updateModal();
+    });
+
+    // Navigate to the next image
+    nextButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateModal();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('active')) return;
+        
+        switch (e.key) {
+            case 'ArrowLeft':
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                updateModal();
+                break;
+            case 'ArrowRight':
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                updateModal();
+                break;
+            case 'Escape':
+                closeModal();
+                break;
+        }
+    });
+
+    // Update modal content (main image and thumbnails)
+    function updateModal() {
+        mainImage.src = images[currentImageIndex];
+        mainImage.alt = galleryImages[currentImageIndex].alt || 'Gallery image';
+
+        // Update thumbnails
+        thumbnailsContainer.innerHTML = '';
+        images.forEach((src, index) => {
+            const thumbnail = document.createElement('img');
+            thumbnail.src = src;
+            thumbnail.classList.add('gallery-modal-thumbnail');
+            if (index === currentImageIndex) {
+                thumbnail.classList.add('active');
+            }
+            thumbnail.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentImageIndex = index;
+                updateModal();
+            });
+            thumbnailsContainer.appendChild(thumbnail);
+        });
+    }
+    
+    
+    // BOTTOM LAST SLIDERS
+    setupBottomLastSliders();
+}
