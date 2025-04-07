@@ -155,7 +155,10 @@ function setupBottomLastSliders() {
     });
 }
 
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/coreHome-website/") {
+// Normalize path (remove trailing slash)
+const normalizedPath = currentPage.endsWith('/') ? currentPage.slice(0, -1) : currentPage;
+
+if (normalizedPath === "" || normalizedPath === "/index.html" || normalizedPath === "/coreHome-website" || normalizedPath === "/coreHome-website/index.html") {
     let myHeader = document.getElementById("header");
 
     window.addEventListener("scroll", function() {
