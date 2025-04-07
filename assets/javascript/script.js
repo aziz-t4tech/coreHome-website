@@ -754,7 +754,7 @@ if (normalizedPath === "" || normalizedPath === "/index.html" || normalizedPath 
 
   
 
-} else if(currentPage.startsWith('/brands/')) {
+} else if(currentPage.includes('/brands/')) {
     document.getElementById("goBack").addEventListener("click", function(event) {
         event.preventDefault();
         history.back();
