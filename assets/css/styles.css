@@ -1,0 +1,2605 @@
+/* GLOBAL CSS SELECTORS GOES HERE */
+* {
+    color: white;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20000px;
+}
+
+a {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* CUSTOM CSS SELECTOR GOES HERE */
+.header {
+    height: 30px;
+    box-shadow: 0 60px 60px 80px rgba(0, 0, 0, 1);
+    z-index: 10;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+}
+
+/* Logo Section - Centered */
+.logoSection {
+    z-index: 2;
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1; /* initially visible */
+  }
+  
+  .logoSection img {
+    height: 600px;
+    width: 600px; /* initial width */
+  }
+  
+  
+
+/* banner slider images goes here */
+
+.slider-container {
+    width: 100%; /* Fix width */
+    height: 700px; /* Fix height */
+    overflow: hidden; /* Prevent extra scrolling */
+    position: relative;
+    /* margin-top: 70px; */
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.bgImg1 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65e5fed597d6a0d854aa41c8_TT_Assorted_Serveware_12.webp);
+}
+
+.bgImg2 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65c5149163922210978b839e_Chicago%20invitation_05-p-800.webp);
+}
+
+.bgImg3 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65c513983d5b2cc9a98a312a_Chicago%20invitation_06.webp);
+}
+
+.bgImg4 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65e5fed597d6a0d854aa41c8_TT_Assorted_Serveware_12.webp);
+}
+
+.bgImg5 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65c5149163922210978b839e_Chicago%20invitation_05-p-800.webp);
+}
+
+.bgImg6 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65c513983d5b2cc9a98a312a_Chicago%20invitation_06.webp);
+}
+
+.bgImg7 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65e6009c2db2704bcbaadebf_CCCOMB12-DS_07.webp);
+}
+
+.bgImg8 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65847fa79d86b5d52258c969_46197_Crazy-Travel-Stories_Lifestyle_33-p-800.webp);
+}
+
+.bgImg9 {
+    background-image: url(https://cdn.prod.website-files.com/657f6997d13b05b913955807/65e60180f0503ed231f44adc_Wood%20with%20black%20coating.webp);
+}
+
+
+.slider .bgImg {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    margin: 1px;
+}
+
+.bgImg h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* slider bottom */
+.sliderBottom {
+    z-index: -1;
+    height: 500px;
+    bottom: 5%;
+}
+  
+  .sliderBottom h2 {
+    font-weight: 700;
+    color: white;
+    transform: scale(1); /* start at scale 1 */
+    opacity: 0;         /* hidden initially */
+}
+
+/* navigation menu styling start here */
+.myNavigation {
+    position: relative;
+    z-index: 1050;
+    top: 0;
+    transition: 2s ease-in .5s ease-out;
+}
+
+.myNavigation .menu-button {
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.myNavigation .menu-button .icons {
+    transform: rotate(-45deg);
+    transition: .5s ease-in-out;
+    width: 25px;
+}
+
+.myNavigation .menu-button:hover .icons {
+    transform: rotate(0deg) !important;
+}
+
+.myNavigation .menu-button .icon1 {
+    width: 8px;
+    height: 1.4px;
+    background: white;
+    margin: auto;
+}
+
+.myNavigation .menu-button .icon2 {
+    width: 20px;
+    height: 1.8px;
+    background: white;
+    margin: 5px auto 6px;
+}
+
+.myNavigation .menu-button .icon3 {
+    width: 9px;
+    height: 1.5px;
+    background: white;
+    margin: auto;
+}
+
+.menu-button .icons .icon {
+    border-radius: 20px;
+}
+
+.menu-button:hover .icons .icon {
+    width: 22px !important;
+    height: 1.5px;
+    transition: .3s ease-in-out;
+}
+
+.menu-button:hover .icons .icon1 {
+    height: 2px !important;
+}
+
+  
+.myNavigation  .logo-img {
+    max-width: 35%;
+    height: auto;
+}
+  
+.myNavigation  .search-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1em;
+}
+
+.myNavigation .search-link svg {
+    font-size: 1.2em;
+}
+
+/* Background Images Container */
+#backgroundContainer {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    transition: opacity .4s ease-in-out;
+}
+
+#backgroundContainer.visible {
+    z-index: 1000; /* Bring to front when menu is open */
+    opacity: 1; /* Make visible */
+}
+
+#backgroundContainer .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+}
+
+#backgroundContainer .background-image.active {
+    opacity: 1;
+}
+
+/* New Navigation Section */
+#desktopNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in;
+    opacity: 0;
+}
+
+#desktopNav.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#desktopNav .left-nav {
+    display: flex;
+    gap: 20px;
+}
+
+#desktopNav .left-nav .close-button {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+#desktopNav .left-nav .close-button .icons {
+    transform: rotate(0deg);
+}
+
+#desktopNav .left-nav .close-button .icon1 {
+    width: 20px;
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+#desktopNav .left-nav .close-button .icon2 {
+    opacity: 0;
+}
+
+#desktopNav .left-nav .close-button .icon3 {
+    width: 20px;
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+#desktopNav .right-nav {
+    display: flex;
+    gap: 20px;
+}
+
+#desktopNav .right-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#desktopNav .right-nav a:hover {
+    color: #ccc;
+}
+
+/* Navigation Scroll Behavior */
+.myNavigation {
+    transition: top 0.3s ease-in-out;
+}
+
+.myNavigation.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Close Button Styling for Desktop Navigation */
+#desktopNav .left-nav .close-button {
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+#desktopNav .left-nav .close-button .icons {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+#desktopNav .left-nav .close-button .icon1,
+#desktopNav .left-nav .close-button .icon2,
+#desktopNav .left-nav .close-button .icon3 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+#desktopNav .left-nav .close-button .icon1 {
+    top: 0;
+    transform: rotate(45deg) translate(5px, 7px);
+}
+
+#desktopNav .left-nav .close-button .icon2 {
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+#desktopNav .left-nav .close-button .icon3 {
+    bottom: 0;
+    transform: rotate(-45deg) translate(5px, -7px);
+}
+
+/* Navigation Links Styling */
+#desktopNav .left-nav .nav-links {
+    padding: 0 0 0 200px;
+    margin-top: 170px;
+}
+
+#desktopNav .left-nav .nav-links li {
+    margin: 15px 0;
+}
+
+#desktopNav .left-nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75em;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+#desktopNav .left-nav .nav-links a:hover {
+    color: #ccc;
+}
+
+#desktopNav .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px; 
+    width: 100%;
+    border-bottom: 4px solid #ebbb53;
+    border-radius: 1px;
+    background-color: #ebbb53;
+    transform: translateX(-50%) scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.3s ease-in-out;
+}
+
+#desktopNav .nav-links a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.navanimation {
+    background: transparent !important;
+}
+
+.navanimation .search-link , .navanimation img {
+    display: none !important;
+}
+
+/* Search Overlay (Full-Screen Cover) */
+.myNavigation .search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    display: none;
+}
+
+.search-overlay .searchText {
+    color: #ffffff09;
+    font-size: 20rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+
+/* Search Box Design */
+.myNavigation .search-container {
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+}
+
+/* Input Field */
+.myNavigation .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffc760;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.myNavigation .search-input::placeholder {
+    color: #ffffff; /* Light pink shade */
+}
+
+/* Close Button */
+#closeSearch {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 5vw;
+}
+
+#closeSearch svg {
+    font-size: 2.5rem;
+    rotate: 0;
+    transition: rotate .5s ease-in-out;
+}
+
+#closeSearch:hover svg {
+    rotate: 90deg;
+    font-weight: 500;
+}
+
+
+/* NAVIGATION MENU STYLING END HERE */
+
+  
+
+/* ABOUT US STYLING GOES HERE */
+.aboutUs.home {
+    padding-top: 140px !important;
+}
+
+.aboutUs.home .myProducts {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(200px);
+}
+
+.aboutUs.home .myProducts img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutUs.home .myProducts h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+#about .link-1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+#about .link-1:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    color: #000;
+}
+
+#about .link-1:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    color: #000;
+}
+
+#about .link-2 {
+    border: #ebbb53 1px solid;
+    color: #000;
+}
+
+#about .link-2:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+/* WHO WE ARE STYLING GOES HERE */
+.whoWeAre.home h2 {
+    font-size: 73.6px;
+    font-weight: 700;
+}
+
+.whoWeAre.home .headingYellow {
+    font-size: 50px;
+    color: rgb(237, 189, 85);
+}
+
+.whoWeAre.home p {
+    font-size: 23px;
+}
+
+.whoWeAre.home img {
+    height: 95%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* WHAT WE DO STYLING GOES HERE */
+.whatWeDo.home .rounded-image img {
+    height: 100%;
+    border-radius: 3%;
+    object-fit: cover;
+}
+
+/* .whatWeDo.home img {
+    width: 55%;
+}
+
+.whatWeDo.home h3 {
+    font-size: 12.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+} */
+
+.whatWeDo .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.whatWeDo .icon-item {
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 18.1%; /* 5 per row */
+}
+
+.whatWeDo .icon-item img {
+    width: 80%;
+}
+
+.whatWeDo .icon-item h3 {
+    font-size: 0.781em;
+    line-height: 20px;
+}
+
+/* WHAT WE ARE STYLING GOES HERE */
+.whatWeAre {
+    height: 600px !important;
+    /* background-color: antiquewhite; */
+}
+
+/* text content styling */
+
+.whatWeAre .textContnt1 {
+    padding-top: 100px;
+    padding-right: 170px;
+    padding-left: 60px;
+}
+
+.whatWeAre .textContnt1 h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.whatWeAre .textContnt1 p {
+    font-size: 1.4rem;
+}
+
+.whatWeAre .textContnt2 h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.whatWeAre .textContnt2 p {
+    font-size: 24px;
+}
+
+.whatWeAre .textContnt2 h3 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.whatWeAre .textContnt2 span {
+    font-size: 24px;
+    color: rgb(240, 199, 103);
+}
+
+/* image content styling */
+.whatWeAre .imageContnt1 .image1 {
+    width: 63%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 2%;
+    position: absolute;
+    top: 6%;
+}
+
+.whatWeAre .imageContnt1 .image2 {
+    left: 40%;
+    top: 0%;
+    width: 50%;
+    border-radius: 3%;
+}
+
+.whatWeAre .imageContnt2 .image1 {
+    width: 140%;
+    height: 46%;
+    border-radius: 10px;
+    position: absolute;
+    top: -40%;
+    left: -47%;
+}
+
+.whatWeAre .imageContnt2 .image2 {
+    width: 120%;
+    height: 20%;
+    object-fit: cover;
+    top: 6%;
+    left: 30%;
+    border-radius: 10px;
+}
+
+.whatWeAre .imageContnt3 img {
+    display: block;
+}
+
+/* Wrapper to hide overflow and allow pinning */
+.whatWeAre .slider-wrapper {   
+    position: relative;
+}
+  
+  /* Container that holds all slides in one horizontal row */
+.whatWeAre .items-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+  
+  /* Each slide takes full viewport width */
+.whatWeAre .slide {
+    flex: 0 0 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+  
+  /* Text and image halves each take 50% width */
+.whatWeAre .textContnt,
+.whatWeAre .imageContnt {
+    flex: 0 0 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Center text vertically */
+.whatWeAre .textContnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Make images responsive */
+.whatWeAre .imageContnt img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* We represent the next generation of housewares STYLING START HERE */
+.WeRepresent .headingContent {
+    padding: 150px;
+}
+
+.WeRepresent .headingContent p span {
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+}
+
+/* Represent images */
+/* Container for all image cards */
+.representImages1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 100%;
+}
+  
+  /* Each image card */
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+    /* Default for mobile: 2 images per row */
+    width: 19.5%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effects for background image */
+  .imageContainer .bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65ce949c349e9f461436b8a6_Silicone%20%26%20Bamboo-2%20(3).jpg') center/cover no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .imageContainer .bgImg2 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65ce9b837d0287673974244e_core-kitchen.webp') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg3 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658089d101313c787f29b55d_BRAND%20IMAGE%20-%20Manna.jpeg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg4 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808bd50f4b142dd5d6e3ea_BRAND%20IMAGE%20-%20BKLYN%20STEEL%20CO.jpeg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg5 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808a91db39146af7b8ad81_BRAND%20IMAGE%20-%20TAL.jpeg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg6 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65ce9ad157b9e13b220b2c28_Screen%20Shot%202024-02-15%20at%206.13.02%20PM.webp') center/cover no-repeat;
+  }
+  
+  .imageContainer .bgImg7 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658087efbb0c2c61b425d2c3_thyme-table.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg8 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808e88501b11ccd85aafc9_wildandwoofycovercard.webp') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg9 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808fb7db460aeff713f4c0_arete%20and%20athene.webp') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg10 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808fb7db460aeff713f4c0_arete%20and%20athene.webp') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg11 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658094fcd62721c433c0ab3c_Screen%20Shot%202023-12-11%20at%205.01.55%20PM.png') center/cover no-repeat;
+  }
+  
+  .imageContainer .bgImg12 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/6580a3d26274f8391ad15aea_RR42329_02.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg13 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d77d2153c6c771495859fc_Mayim_Lifestyle_01.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg14 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d7859bf5fb9994684aece4_maisondebase%20-%20small%20thumbnail.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg15 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d787adbcbec636605b21db_Bklyn%20Refinery%20Thumbnail.png') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg16 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d78c51f38f76d2cc8f8d4e_wellanddowd-%20thumbnail%20small.jpg') center/cover no-repeat;
+  }
+  
+  .imageContainer .bgImg17 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d77b89a4f705134a2d232c_Medici_LifeStyle_Web_019.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg18 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d791e6707860ff6462163f_41709_02.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg19 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d78dbc97f20f26f320be63_HBA_TFW_Lifestyle_2022_08.jpg') center/cover no-repeat;
+  }
+
+  .imageContainer .bgImg20 {
+    background: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658091e7bad148ddb2283167_WW_Website_2022_12.jpg') center/cover no-repeat;
+  }
+  
+  /* Overlay to darken or tint the bgImg */
+  .imageContainer .bgRgba {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+  }
+  
+  /* Centered image over the background */
+  .imageContainer img {
+    position: absolute;
+    width: 180px;
+    height: 130px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* Button styled and centered at the bottom */
+  .imageContainer .btn {
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #000 !important;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    z-index: 3;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  
+  .imageContainer:hover .btn {
+    bottom: 10px;
+  }
+
+  .imageContainer .btn:hover {
+    background: #ebbb53;
+  }
+  
+  /* Hover effect for the background image container */
+.imageContainer:hover .bgImg {
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+
+/* slider of bottom second last */
+.WeRepresent .sliderContent {
+    width: 100%;
+    overflow: hidden;
+}
+  
+.WeRepresent .innerSlider {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent content from wrapping */
+}
+  
+.WeRepresent .sliderContent .text {
+    font-weight: 600;
+    white-space: nowrap; /* Ensure each text element stays on one line */
+    margin: 0; /* Reset default margins */
+}
+  
+.WeRepresent .sliderContent .circle {
+    width: 1rem;
+    height: 1rem;
+    background: #ebbb53;
+    border-radius: 50%;
+    flex-shrink: 0; /* Prevent the circle from shrinking */
+    margin: 0 50px; /* Space between text and circle */
+}
+  
+/* collaborate With Us */
+.collaborateWithUs {
+    /* Container styles */
+    .imageCard {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Background image layer */
+    .bgImg {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        transition: filter 0.3s ease;
+        border-radius: 2%;
+    }
+    
+    .bgImg1 {
+        background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65945cfe69db34e10e05d2b7_Private_Label_1.webp');
+    }
+
+    .bgImg2 {
+        background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65ce63e2d6ef8a899ee60d40_WM_Yellowstone_John-2023_27.webp');
+    }
+
+    .bgImg3 {
+        background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65ce625f8cfcf5de8bad1fe8_giving-back.webp');
+    }
+
+    .bgImg4 {
+        background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65d8b5a711a09d255df92f19_collaborate%20with%20us.webp');
+    }
+
+    .bgImg5 {
+        background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/6594669c7aae3513746e3468_nyc%20skyline.webp');
+    }
+
+    .bgImg6 {
+        background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65ce4f8eae69db12eca9b134_CH_LIFESTYLE-35.webp');
+    }
+    
+    /* Overlay layer with rgba background */
+    .bgRgba {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Adjust opacity and color as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    /* Button styles (optional customization) */
+    .bgRgba .btn {
+        visibility: hidden;
+        opacity: 0;
+        background-color: #fff;
+        color: #000 !important;
+        border: none;
+        text-transform: uppercase;
+        transform: translateY(30px);
+        transition: .3s ease-in-out;
+    }
+    
+    .bgRgba .btn:hover {
+        background-color: #ebbb53;
+    }
+    
+    /* On hover, apply blur to the background image */
+    .imageCard:hover .bgImg {
+        filter: blur(5px);
+    }
+
+    p {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    
+    .bgRgba1:hover .btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+    .bgRgba2:hover .btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+    .bgRgba3:hover .btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+    .bgRgba4:hover .btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+    .bgRgba5:hover .btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+    .bgRgba6:hover .btn {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+}
+
+/* BOTTOM LAST SLIDERS */
+
+.BottomLastSliders .innerSlider .imageItem {
+    position: relative;
+}
+
+.BottomLastSliders .innerSlider .imageItem img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.BottomLastSliders .innerSlider .socialIcon {
+    visibility: hidden;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -50%);
+    transition: .5s ease-out;
+}
+
+.BottomLastSliders .innerSlider .socialIcon img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.BottomLastSliders{
+    .imageItem1:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem2:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem3:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem4:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem5:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem6:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem7:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem8:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem9:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+
+    .imageItem10:hover .socialIcon {
+        visibility: visible;
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+}
+
+#modals {
+    z-index: 1051;
+}
+
+#aboutUsModal h5 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#aboutUsModal .modal-body p {
+    font-size: 1.2rem;
+}
+
+#ourBrandsModal .modal-header h5 {
+    font-weight: 600;
+}
+
+#ourBrandsModal .modal-body p {
+    font-size: 1.4rem;
+}
+
+#resourcesModal .modal-body p {
+    font-size: 1.5rem;
+}
+
+#resourcesModal .modal-body img {
+    width: 18rem;
+}
+
+#resourcesModal .modal-body .btn {
+    outline: none;
+    border: none;
+    padding: 13px 0;
+}
+
+#resourcesModal .modal-body .btn:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94) !important;
+}
+
+#collaborationModal .paraDiv {
+    padding: 0 40px;
+}
+
+#collaborationModal .paraDiv p {
+    font-size: 1.34rem;
+}
+
+#collaborationModal .btn {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+}
+
+#collaborationModal .btn:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+}
+
+#collaborationModal .modal-body img {
+    width: 18.4rem !important;
+}
+
+/* DESKTOP NAVIGATION LINKS DROP-DOWN LIST STYLING */
+#desktopNav .left-nav .nav-links a svg {
+    font-size: 0.99em;
+    margin-right: 10px;
+}
+
+#collapseExample a, #collapseExample2 a, #collapseExample3 a {
+    font-size: 1.3em !important;
+}
+
+#collapseExample a:hover, #collapseExample2 a:hover, #collapseExample3 a:hover {
+    color: #ebbb53 !important;
+}
+
+#collapseExample a:hover::after, #collapseExample2 a:hover::after, #collapseExample3 a:hover::after {
+    color: #ebbb53 !important;
+    transform: translateX(-50%) scaleX(0) !important;
+}
+
+/* FOOTER STYLING GOES HERE */
+.social-section {
+    gap: 1rem;
+}
+  
+  .social-heading {
+    font-size: 1.1rem;
+    color: #f8f9fa; 
+    font-weight: 400; 
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.social-divider {
+    border: 1px solid #ffffff;
+    width: 4%;
+    margin: 0;
+    opacity: 1;
+}
+  
+.social-icon {
+    width: 2.3em; 
+    height: 2.3em; 
+    background-color: #343a40; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, filter 0.3s; 
+    cursor: pointer;
+}
+  
+.social-icon i {
+    font-size: 1.25rem; 
+    color: #f8f9fa; 
+}
+  
+  /* Hover Effects */
+.social-icon.twitter:hover {
+    background-color: black; 
+}
+  
+  .social-icon.facebook:hover {
+    background-color: #3b5998;
+}
+  
+.social-icon.instagram:hover {
+    background: linear-gradient(
+      45deg,
+      #f09433,
+      #e6683c,
+      #dc2743,
+      #cc2366,
+      #bc1888
+    );
+}
+  
+  .social-icon.instagram:hover {
+    filter: brightness(1.2);
+}
+
+/* OUR BRANDS HTML FILE STYLING GOES HERE */
+.myNavigation.shadow {
+    box-shadow: 0px 5px 10px 10px #000 !important;
+}
+
+#representImages1.ourBrands {
+    padding-top: 110px;
+}
+
+/* INNOVATION HTML FILE STYLING GOES HERE */
+#innovation {
+    margin-top: 150px;
+}
+
+#innovation .content-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65ce4f8e57e11edd123d37fe_CH_LIFESTYLE-26.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 44em;
+}
+
+#innovation .content-bg-rgba {
+    background: rgba(0, 0, 0, 0.38);
+    width: 100%;
+    height: 44em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#innovation .content-bg-rgba h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#innovation .sideContent {
+    padding: 150px 100px 20px 100px;
+}
+
+#innovation .sideContent h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+#innovation .sideContent p {
+    font-size: 1.19rem;
+    color: #ccc;
+}
+
+#innovation .sideContent .form-label {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+#innovation .sideContent .form-control {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d2d182 !important;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#innovation .sideContent .form-control::placeholder {
+    color: #888;
+}
+
+#innovation .sideContent .form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #007bfc !important;
+}
+
+#innovation .sideContent .icons {
+    font-size: 14px;
+    gap: 10px;
+}
+
+#innovation .sideContent .btn:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    transition: 1s;
+}
+
+/* CONTACT US FILE STYLING GOES HERE */
+#contactUs {
+    margin-top: 130px;
+}
+
+#contactUs .content-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/65847fa8f117136eb232355f_WM2590A_WM2590C_L_02.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 44em;
+}
+
+#contactUs .content-bg-rgba {
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 44em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactUs .content-bg-rgba h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#contactUs .sideContent {
+    padding: 50px 100px 20px 100px;
+}
+
+#contactUs .sideContent .btn-toggle {
+    color: white;
+    background-color: #343a40; /* Dark background */
+    border: 1px solid #343a40;
+    transition: all 0.3s ease;
+}
+
+#contactUs .sideContent .btn-check:checked + .btn-toggle {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+#contactUs .sideContent p {
+    font-size: 1.19rem;
+    color: #ccc;
+}
+
+#contactUs .sideContent .form-label {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+#contactUs .sideContent .form-control {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #d2d182 !important;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#contactUs .sideContent .form-control::placeholder {
+    color: #888;
+}
+
+#contactUs .sideContent .form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #007bfc !important;
+}
+
+#contactUs .sideContent .icons {
+    font-size: 14px;
+    gap: 10px;
+}
+
+#contactUs .sideContent .btn-hover:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    transition: 1s;
+}
+
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.goBackBtn {
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.goBackBtn .btn {
+    background: linear-gradient(to right, #fff, #fff);
+    color: #000 !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.goBackBtn .btn:hover {
+    background: linear-gradient(to right, #efd75c, #ebbb53);
+}
+
+
+.coreBamboo .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65ce949c349e9f461436b8a6_Silicone%20%26%20Bamboo-2%20(3).jpg');
+}
+
+.commonSection .section-background {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.commonSection .section-background .section-RGBA {
+    background: linear-gradient(to top, black, transparent);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commonSection .section-background img {
+    z-index: 1;
+    filter: brightness(200%) grayscale();
+    object-fit: contain;
+    max-width: 68%;
+    max-height: 46%;
+    position: relative;
+}
+
+.commonSectionPara {
+    padding: 10px 303px 50px;
+    font-size: 1.6rem;
+}
+
+.commonBrandsSection .glow-on-hover {
+    text-decoration: none;
+    color: #ebbb53;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.commonBrandsSection .glow-on-hover:hover {
+    text-shadow: 
+    0 0 10px #000000,
+    0 0 20px #fafafa,
+    0 0 30px #ffed8e,
+    0 0 40px #ffe86d,
+    0 0 50px #efd75c
+}
+
+/* GALLERY IMAGES START HERE */
+/* GALLERY IMAGES STYLING (original gallery) */
+.gallery .wrap {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.gallery .wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 5px;
+}
+
+.gallery .wrap img:hover {
+    transform: scale(1.04);
+}
+
+/* MODAL GALLERY STYLING (separate from main gallery) */
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.gallery-modal.active {
+    display: flex;
+}
+
+.gallery-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-modal-main-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Navigation buttons */
+.gallery-modal-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.gallery-modal-nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-modal-prev {
+    left: 20px;
+}
+
+.gallery-modal-next {
+    right: 20px;
+}
+
+/* Thumbnails container - UPDATED FOR SCROLL */
+.gallery-modal-thumbnails {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.gallery-modal-thumbnails::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-modal-thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-shrink: 0; /* Prevent thumbnails from shrinking */
+}
+
+.gallery-modal-thumbnail:hover,
+.gallery-modal-thumbnail.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Close button */
+.gallery-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.gallery-modal-close:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+  
+
+
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.coreKitchen .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65ce9b837d0287673974244e_core-kitchen.webp');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.manna-hydration .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658089d101313c787f29b55d_BRAND%20IMAGE%20-%20Manna.jpeg');
+}
+
+.manna-hydration.commonSection .section-RGBA {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.brooklyn-steel-co .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808bd50f4b142dd5d6e3ea_BRAND%20IMAGE%20-%20BKLYN%20STEEL%20CO.jpeg');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.tal-hydration .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808a91db39146af7b8ad81_BRAND%20IMAGE%20-%20TAL.jpeg');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.hydragear .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65ce9ad157b9e13b220b2c28_Screen%20Shot%202024-02-15%20at%206.13.02%20PM.webp');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.thyme-and-table .section-background {
+    background-image: url('');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.wild-and-woofy .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808eacd3a8a3d3fe2ea501_wildandwoofycovercard.jpg');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.arete-athene .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808fad31534fb0fedf0ff5_arete%20and%20athene.jpg');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.yellow-cab-games .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65808d2bcc8368a4fc22e8aa_yellow%20cab%20games.jpg');
+}
+
+.yellow-cab-games img {
+    max-width: 85% !important;
+    max-height: 85% !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.sweet-sugar-fantasy .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658094fcd62721c433c0ab3c_Screen%20Shot%202023-12-11%20at%205.01.55%20PM.png');
+}
+
+.sweet-sugar-fantasy .section-background .section-RGBA {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.roam-and-repeat .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/6580a3d26274f8391ad15aea_RR42329_02.jpg');
+}
+
+.roam-and-repeat .section-background .section-RGBA {
+    background: linear-gradient(to top, black, transparent);
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.mayim .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d77d2153c6c771495859fc_Mayim_Lifestyle_01.jpg');
+}
+
+.mayim .section-background .section-RGBA {
+    background: linear-gradient(to top, black, transparent);
+}
+
+.mayim img {
+    max-width: 80% !important;
+    max-height: 80% !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.maison-de-base .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d785a0327de59b957a87a3_maisondebase%20main%20thumbnail.webp');
+}
+
+.maison-de-base img {
+    max-width: 37rem !important;
+    max-height: 37rem !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.brooklyn-refinery .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d787b46ba46d6a9a2886e2_Bklyn%20Refinery%20Thumbnail%20Main.jpg');
+}
+
+.brooklyn-refinery img {
+    max-width: 33rem !important;
+    max-height: 33rem !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.well-and-dowd .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d78c4ba38e8971c066bc37_wellanddowd%20-%20thumbnail%20main.jpg');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.medici .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d77b89a4f705134a2d232c_Medici_LifeStyle_Web_019.jpg');
+}
+
+.medici img {
+    max-width: 30rem !important;
+    max-height: 30rem !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.scribble-and-scribe .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d791e6707860ff6462163f_41709_02.jpg');
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.tfw .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/65d78dbc97f20f26f320be63_HBA_TFW_Lifestyle_2022_08.jpg');
+}
+
+.tfw img {
+    max-width: 35rem !important;
+    max-height: 35rem !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+/* CORE-BAMBOO PAGE STYLING START HERE */
+.w-plus-w .section-background {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/658091c60060d495633dfe60_WW_Website_2022_14.jpg');
+}
+
+.w-plus-w img {
+    max-width: 27rem !important;
+    max-height: 27rem !important;
+}
+
+/* CORE-BAMBOO PAGE STYLING END HERE */
+
+/* NEWS AND PRESS PAGE STYLING START HERE */
+.newsAndPressBanner {
+    background-image: url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/6786ef1588f89529709126c6_AdobeStock_64947222.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    height: 85vh;
+    margin-top: 90px;
+}
+  
+
+.newsAndPressBanner .newsAndPressBannerContainer {
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.5) 50%, rgb(0, 0, 0, 0.8) 100%);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.newsAndPressBanner .para {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.newsAndPressBanner .newsAndPressTitle {
+    font-size: 3.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.newsAndPressBanner .para,
+.newsAndPressBanner .newsAndPressTitle {
+  mix-blend-mode: lighten;
+  color: white;
+}
+
+
+/* CLEAN MAMA PARTNERS STYLING START HERE */
+.clean-mama-partners {
+    position: relative;
+    z-index: 2;
+}
+
+
+.clean-mama-partners .col-md-8 {
+    height: 75vh;
+}
+
+.clean-mama-partners .bg-image {
+    background-image: url('https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/678531a07d737bc4bb3772d7_becky-avatar.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    transition: 1s ease-in-out;
+}
+
+.clean-mama-partners .bg-image:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.clean-mama-partners .bg-image a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.clean-mama-partners .bg-image a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    transition: width 0.8s ease-in-out;
+}
+
+.clean-mama-partners .bg-image:hover a::after {
+    width: 100%;
+}
+
+.clean-mama-partners .bgRgba {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 36% 7% 0;
+}
+
+.clean-mama-partners .bgRgba p {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.clean-mama-partners .sidebar-categories .col-6 {
+    cursor: pointer;
+}
+
+.clean-mama-partners .sidebar-categories .sidebar-categories-item {
+    padding: 1rem 1rem;
+}
+
+.clean-mama-partners .featured {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+  
+.clean-mama-partners .featured img {
+    width: 15rem;
+    height: auto;
+    object-fit: cover;
+}
+  
+.clean-mama-partners .featured-text a {
+    color: #000;
+}
+
+.clean-mama-partners .featured-text a:hover {
+    border-bottom: 1px solid #ccc;
+}
+
+.clean-mama-partners .tags {
+    row-gap: 0.5rem;   /* vertical gap (gap-2) */
+    column-gap: 1.5rem; /* horizontal gap (gap-4) */
+}
+  
+.clean-mama-partners .tags a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+  
+.clean-mama-partners .tags a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    transition: width 0.4s ease-in-out;
+}
+  
+.clean-mama-partners .tags a:hover::after {
+    width: 100%;
+}
+
+/* Wrapper form */
+.clean-mama-partners .custom-form {
+    max-width: 500px;
+}
+  
+/* Label customization */
+.clean-mama-partners .form-label-custom {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+  
+/* Input customization */
+.clean-mama-partners .input-custom {
+    border: 1px solid #555 !important;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+  
+.clean-mama-partners .input-custom:focus {
+    box-shadow: none;
+    background-color: #fff;
+    transition: .3s ease-in-out;
+}
+  
+/* Button customization */
+.clean-mama-partners .btn-custom {
+    background: linear-gradient(to right, #fff, #fff);
+    color: #000 !important;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background 1s ease-in-out;
+}
+  
+.clean-mama-partners .btn-custom:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+}
+
+/* social icons */
+.clean-mama-partners .social-icons {
+    margin-top: 20px;
+}
+  
+.clean-mama-partners .social-link {
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background: #222;
+    color: #fff;
+    transition: background 0.3s, transform 0.3s;
+}
+  
+.clean-mama-partners .social-link:hover {
+    transform: scale(1.1);
+}
+  
+  /* Hover background colors per platform */
+.clean-mama-partners .social-link.twitter:hover {
+    background: transparent;
+}
+  
+.clean-mama-partners .social-link.facebook:hover {
+    background: #3b5998;
+}
+  
+.clean-mama-partners .social-link.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+  
+.clean-mama-partners .social-link.pinterest:hover {
+    background: #E60023;
+}
+  
+.clean-mama-partners .social-link.telegram:hover {
+    background: #0088cc;
+}
+
+/* instagram images */
+.instagram-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    gap: 10px;
+}
+  
+.instagram-gallery a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+  
+.instagram-gallery img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+  
+.instagram-gallery a:hover img {
+    transform: scale(1.05);
+}
+  
+.overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    opacity: 0;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+  
+.instagram-gallery a:hover .overlay-icon {
+    opacity: 1;
+}
+
+/* NEWS AND PRESS FOOTER STYLING START HERE */
+.newsAndPressFooter {
+    background: 
+        linear-gradient(to bottom,rgba(0, 0, 0, 0.7), rgba(150, 150, 150, 0.2)), 
+        url('https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a55_adrien-olichon-762119-unsplash.webp');
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.newsAndPressFooter .container-fluid {
+    padding-top: 100px;
+}
+
+.newsAndPressFooter .col-md-4 {
+    height: 400px;
+}
+
+.newsAndPressFooter .column-1 {
+    padding: 60px 68px 10px;
+}
+  
+.newsAndPressFooter .footer-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.newsAndPressFooter .column-1 p {
+    color: #bbb;
+    font-size: 1.1rem;
+}
+  
+.newsAndPressFooter .read-more {
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.newsAndPressFooter .read-more:hover {
+    text-decoration: underline;
+}
+
+.newsAndPressFooter .column-2 {
+    padding: 60px 18px 10px;
+}
+  
+.newsAndPressFooter .footer-form {
+    max-width: 400px;
+}
+
+.newsAndPressFooter .footer-form .form-control {
+    border-radius: 3px;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.newsAndPressFooter .footer-form .form-control:focus {
+    background: #fff;
+}
+
+.newsAndPressFooter .footer-form .form-control::placeholder {
+    color: #aaa;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.newsAndPressFooter .footer-form .btn {
+    background: linear-gradient(to right, #fff, #fff);
+    transition: 1s ease-in;
+    color: #000 !important;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsAndPressFooter .footer-form .btn:hover {
+    background: linear-gradient(to right, #ebbb53, #ffdd94);
+    transition: 1s ease-in;
+}
+
+/* Social icon wrapper */
+.newsAndPressFooter .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222; /* default bg */
+    color: white;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+/* Facebook hover */
+.newsAndPressFooter  .social-link.facebook:hover {
+    background-color: #1877f2;
+}
+  
+/* Instagram hover */
+.newsAndPressFooter  .social-link.instagram:hover {
+    background-color: #e1306c;
+}
+  
+.newsAndPressFooter  .social-link:hover {
+    transform: scale(1.1);
+}
+  
+
+.newsAndPressFooter .column-3 {
+    padding: 60px 58px 10px;
+}
+  
+.newsAndPressFooter .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 30px;
+    line-height: 30px;
+}
+  
+.newsAndPressFooter .footer-links a {
+    color: #aaa !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+  
+.newsAndPressFooter .footer-links a:hover {
+    color: #fff !important;
+}
+  
+  
+
+
+/* NEWS AND PRESS FOOTER STYLING END HERE */
+  
+/* NEWS AND PRESS PAGE STYLING END HERE */
+  
+  
+  
+
+
+
+
+
+/* Responsive Styles */
+@media (min-width: 1200px) {
+    .modal-xl {
+        --bs-modal-width: 1000px;
+        padding-top: 30px;
+    }
+}
+
+/* For larger devices (using a breakpoint of 992px, adjust if needed) */
+@media (max-width: 600px) {
+    #logoSection img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .myNavigation .logo-img {
+        max-width: 60%;
+    }
+
+    .myNavigation .menu-button:hover .icons {
+        transform: rotate(-45deg);
+    }
+
+    .myNavigation .menu-button:hover {
+        .icon1 {
+            width: 8px;
+            height: 1.4px;
+        }
+
+        .icon2 {
+            width: 20px;
+            height: 1.8px;
+        }
+
+        .icon3 {
+            width: 9px;
+            height: 1.5px;
+        }
+    }
+
+    .whatWeDo.home .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .whatWeDo .icon-item {
+        flex: 0 0 30%; /* For small devices: 3 per row */
+    }
+
+    .whatWeDo .icon-item img {
+        width: 78%;
+    }
+
+    /* REPRESENT IMAGES */
+
+    .imageContainer {
+        width: 49%;
+        height: 230px;
+    }
+
+    .representImages1 {
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .imageContainer .btn {
+        font-size: 7px;
+    }
+
+    .collaborateWithUs .bgImg {
+        height: 200px;
+    }
+
+    /* We represent the next generation of housewares STYLING START HERE */
+    .WeRepresent .headingContent {
+        padding: 40px 0;
+    }
+
+    .WeRepresent .headingContent p span {
+        font-size: 34px;
+        line-height: 60px;
+    }
+
+    #desktopNav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #desktopNav .left-nav,
+    #desktopNav .right-nav {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #desktopNav .left-nav .nav-links {
+        margin-top: 50px;
+        padding:  0 0 0 0;
+    }
+
+    #desktopNav .right-nav {
+        margin-top: 20px;
+    }
+
+    #resourcesModal .modal-body img {
+        width: 12rem;
+    }
+
+    #resourcesModal .modal-body p {
+        font-size: 1.2rem;
+        text-align: left !important;
+    }
+
+    #innovation .sideContent {
+        padding: 100px 0 20px 0;
+    }
+
+    #contactUs .sideContent {
+        padding: 100px 0 20px 0;
+    }
+
+    .gallery .wrap {
+        height: auto; /* Allow height to adjust automatically */
+    }
+    
+    .gallery .col-8, .gallery .col-4 {
+        height: auto;
+    }
+
+    .gallery-modal-nav-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .gallery-modal-thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .gallery-modal-content {
+        width: 95%;
+        height: 95%;
+    }
+
+    .gallery-modal-nav-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .gallery-modal-thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .gallery-modal-content {
+        width: 95%;
+        height: 95%;
+    }
+    
+    .gallery-modal-prev {
+        left: 10px;
+    }
+    
+    .gallery-modal-next {
+        right: 10px;
+    }
+
+    .commonSectionPara {
+        padding: 10px 0px 50px;
+        font-size: 1.1rem;
+    }
+
+    /* LEFT TO RIGHT SLIDER ON TOP BOTTOM SLIDER */
+    .whatWeAre .slide {
+        flex: 0 0 140vw !important;
+    }
+
+    .whatWeAre .slide2 {
+        flex: 0 0 220vw !important;
+    }
+    
+    .whatWeAre .textContnt1 {
+        padding: 100px 10px;
+    }
+
+    .whatWeAre .textContnt1 h2 {
+        font-size: 2.7rem;
+    }
+
+    .whatWeAre .textContnt1 p {
+        font-size: 1.1rem;
+    }
+
+    .whatWeAre .imageContnt1 {
+        padding-left: 80px;
+        margin-top: 40px;
+    }
+
+    .whatWeAre .imageContnt1 .image1 {
+        width: 70vw;
+        height: auto;
+    }
+
+    .whatWeAre .imageContnt1 .image2 {
+        width: 40vw;
+        height: auto;
+        top: 3%;
+        left: 80%;
+    }
+
+    .whatWeAre .textContnt2 {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+
+    .whatWeAre .textContnt2 h2 {
+        font-size: 2.4rem;
+    }
+
+    .whatWeAre .textContnt2 span {
+        font-size: 1.2rem;
+    }
+
+    .whatWeAre .textContnt2 p {
+        font-size: 1rem;
+    }
+
+    .whatWeAre .textContnt2 h3 {
+        font-size: 2.8rem;
+    }
+
+    .whoWeAre h2 {
+        font-size: 4.5rem !important;
+    }
+
+    .whoWeAre p {
+        font-size: 1.05rem !important;
+    }
+
+    .whoWeAre .headingYellow {
+        font-size: 2.5rem !important;
+    }
+    
+    .whatWeDo .sideContent h2 {
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+    .whatWeDo .sideContent p {
+        font-size: 1.2rem;
+    }
+
+    #desktopNav .left-nav {
+        text-align: left;
+    }
+
+    .newsAndPressFooter .col-md-4 {
+        border: 1px solid #fff !important;
+    }
+
+    .clean-mama-partners .col-md-8 {
+        height: 55vh;
+    }
+
+    .clean-mama-partners .bg-image {
+        height: 300px;
+        scale: 1;
+    }
+
+    .clean-mama-partners .bg-image:hover {
+        scale: 1.015;
+    }
+
+    .clean-mama-partners .bgRgba {
+        padding: 28% 7% 0;
+    }
+
+    .clean-mama-partners .bgRgba p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+
+}
+
+
+@media (max-width: 400px) {
+    /* We represent the next generation of housewares STYLING START HERE */
+    .WeRepresent .headingContent {
+        padding: 40px 0;
+    }
+
+    .WeRepresent .headingContent p span {
+        font-size: 26px;
+        line-height: 47px;
+    }
+    
+    .representImages1 {
+        gap: 7px;
+    }
+
+    .imageContainer {
+        height: 12rem;
+    }
+
+    .imageContainer img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .imageContainer .btn {
+        bottom: -40px;
+        padding: 4px 1px;
+        border-radius: 3px;
+    }
+
+    .imageContainer:hover .btn {
+        bottom: 3px;
+    }
+
+    .gallery .wrap {
+        height: auto; /* Allow height to adjust automatically */
+      }
+    
+      .gallery .col-8, .gallery .col-4 {
+        height: auto;
+      }
+}

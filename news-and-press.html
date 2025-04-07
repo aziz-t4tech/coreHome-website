@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>news-and-press</title>
+
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- font-awesome links -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body class="bg-black">
+        <section class="container-fluid text-light px-lg-4 px-2 py-2 w-100 bg-black myNavigation homeNavigation">
+            <nav class="row align-items-center">
+                <!-- Left Column: Menu Button -->
+                <div class="col text-left">
+                    <button class="menu-button d-flex align-items-center gap-3 btn text-light">
+                        <div class="icons">
+                            <div class="icon1 icon"></div>
+                            <div class="icon2 icon"></div>
+                            <div class="icon3 icon"></div>
+                        </div>
+                        <span class="d-lg-block d-none">MENU</span>
+                    </button>
+                </div>
+                
+                <!-- Center Column: Logo Image -->
+                <div class="col text-center" id="logoContainer">
+                    <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/65cbee72e517af5f07398f59_MicrosoftTeams-image%20(38)-p-500.webp" alt="Logo" class="logo-img">
+                </div>
+                
+                <!-- Right Column: Search Icon and Text -->
+                <div class="col" id="searchIconContainer">
+                    <a href="" class="search-link d-flex justify-content-end gap-3" id="searchToggle">
+                        <span class="d-lg-block d-none">SEARCH</span> 
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                
+                <!-- Search Box (Hidden by Default) -->
+                <div class="col search-overlay" id="searchOverlay">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="What are you looking for?">
+                    </div>
+                    <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="position-absolute searchText">SEARCH</div>
+                </div>
+            </nav>
+        </section>
+        
+        <!-- Container for dynamic background images -->
+        <div id="backgroundContainer">
+            <div class="background-image active" style="background-image: url('https://media.istockphoto.com/id/476392316/photo/kitchen-utensil.jpg?s=612x612&w=0&k=20&c=Mb2d_7WGJP6N5Jb__soAl74ZUhFwH47iSdJtXeoW47o=');"></div>
+            <div class="background-image" style="background-image: url('https://shreeinterior.in/wp-content/uploads/2024/09/Exposed-Grid-Access-Panels-for-Office-Workplaces-and-Schools-1024x683.jpg');"></div>
+            <div class="background-image" style="background-image: url('https://media.istockphoto.com/id/476392316/photo/kitchen-utensil.jpg?s=612x612&w=0&k=20&c=Mb2d_7WGJP6N5Jb__soAl74ZUhFwH47iSdJtXeoW47o=');"></div>
+            <div class="background-image" style="background-image: url('https://kaitsuko.uk/cdn/shop/articles/764d19b464cdbd702670a8bbb15e4a7c.jpg?v=1707422999');"></div>
+        </div>
+        
+        <!-- Container to load desktop.html content -->
+        <div id="desktopNavContainer" class="d-none"></div>
+        
+        <section class="w-100 newsAndPressBanner">
+            <div class="container-fluid w-100 newsAndPressBannerContainer">
+                <div class="text-center">
+                    <p class="text-uppercase para">core home</p>
+                    <h1 class="newsAndPressTitle">News & Press</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLEAN MAMA PARTNERS  -->
+        <section class="clean-mama-partners">
+            <div class="container w-100 clean-mama-partners-container">
+                <div class="row">
+                    <div class="col-12 col-md-8 overflow-hidden px-4 px-lg-0">
+                        <div class="bg-image">
+                            <div class="bgRgba">
+                                <p class="text-center">
+                                    CLEAN MAMA PARTNERS WITH POPSHELF AND CORE HOME FOR AN EXCLUSIVE PRODUCT LINE
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="" class="text-uppercase" title="read more">read more</a>
+                                    <div class="d-flex align-items-center gap-2">
+                                        january 13, 2025
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-5 mt-5 mt-lg-0">
+                        <div class="row sidebar-categories g-3 text-center">
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-3">
+                                    <a href="">
+                                        <div class="category-name">All</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-lg-3">
+                                    <a href="">
+                                        <div class="category-name">Gadgets</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-lg-3">
+                                    <a href="">
+                                        <div class="category-name">Health & Beauty</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-lg-3">
+                                    <a href="">
+                                        <div class="category-name">Pets</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-lg-3">
+                                    <a href="">
+                                        <div class="category-name">Hydration</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-lg-3">
+                                    <a href="">
+                                        <div class="category-name">Cookware</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="border sidebar-categories-item py-lg-3">
+                                    <a href="">
+                                        <div class="category-name">Travel</div>
+                                        <div class="background-image"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center text-center my-5 pt-3">
+                            <div class="flex-grow-1">
+                              <hr class="m-0">
+                            </div>
+                            <div class="px-3 fw-bold">Featured</div>
+                            <div class="flex-grow-1">
+                                <hr class="m-0">
+                            </div>
+                        </div>
+                        
+                        <div class="featured d-flex align-items-start gap-3">
+                            <div class="featured-image">
+                                <a href="">
+                                    <img src="https://cdn.prod.website-files.com/657f6998d13b05b9139559e8/678531a07d737bc4bb3772d7_becky-avatar.jpg" alt="error" class="img-fluid rounded-1">
+                                </a>
+                            </div>
+                            <div class="featured-text">
+                                <a href="" class="fw-bold small">
+                                    CLEAN MAMA PARTNERS WITH POPSHELF AND CORE HOME FOR AN EXCLUSIVE PRODUCT LINE
+                                </a>
+                                <span class="text-dark d-block small pt-2">Jan 13, 2025 in Gadgets</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center text-center my-5 pt-3">
+                            <div class="flex-grow-1">
+                              <hr class="m-0">
+                            </div>
+                            <div class="px-3 fw-bold">Tags</div>
+                            <div class="flex-grow-1">
+                                <hr class="m-0">
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap tags">
+                            <a href="">#Debut</a>
+                            <a href="">#Exclusive</a>
+                            <a href="">#POPSHELF</a>
+                            <a href="">#Clean Mama</a>
+                            <a href="">#Travel</a>
+                            <a href="">#Outdoors</a>
+                            <a href="">#Gadgets</a>
+                            <a href="">#cosmetics</a>
+                            <a href="">#Health & Beauty</a>
+                            <a href="">#Pets</a>
+                            <a href="">#Games</a>
+                            <a href="">#Hydration</a>
+                            <a href="">#Kitchen</a>
+                            <a href="">#Cookware</a>
+                            <a href="">#Workspace</a>
+                            <a href="">#Video</a>
+                            <a href="">#Arhitecture</a>
+                            <a href="">#Nature</a>
+                            <a href="">#Aerial</a>
+                            <a href="">#Motivation</a>
+                            <a href="">#Photography</a>
+                            <a href="">#Adventure</a>
+                        </div>
+                          
+                        <div class="d-flex align-items-center text-center my-5 pt-3">
+                            <div class="flex-grow-1">
+                              <hr class="m-0">
+                            </div>
+                            <div class="px-3 fw-bold">Newsletter</div>
+                            <div class="flex-grow-1">
+                                <hr class="m-0">
+                            </div>
+                        </div>
+
+                        <form action="" class="custom-form w-100 w-md-75 mx-auto">
+                            <div class="form-group mb-3">
+                              <label for="name" class="form-label form-label-custom">Name</label>
+                              <input type="text" id="name" class="form-control input-custom">
+                            </div>
+                          
+                            <div class="form-group mb-3">
+                              <label for="email" class="form-label form-label-custom">Email address</label>
+                              <input type="email" id="email" class="form-control input-custom">
+                            </div>
+                          
+                            <button type="submit" class="btn rounded-1 text-uppercase w-100 btn-custom">Subscribe</button>
+                        </form>                          
+                          
+                        <div class="d-flex align-items-center text-center my-5 pt-3">
+                            <div class="flex-grow-1">
+                              <hr class="m-0">
+                            </div>
+                            <div class="px-3 fw-bold">Stay in Touch</div>
+                            <div class="flex-grow-1">
+                                <hr class="m-0">
+                            </div>
+                        </div>
+
+                        <div class="social-icons d-flex justify-content-center gap-3">
+                            <a href="#" class="social-link twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-link facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#" class="social-link instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="#" class="social-link telegram"><i class="fa-brands fa-telegram"></i></a>
+                        </div>                                     
+
+                        <div class="d-flex align-items-center text-center my-5 pt-3">
+                            <div class="flex-grow-1">
+                              <hr class="m-0">
+                            </div>
+                            <div class="px-3 fw-bold">Instagram</div>
+                            <div class="flex-grow-1">
+                                <hr class="m-0">
+                            </div>
+                        </div>
+
+                        <div class="instagram-gallery d-grid">
+                            <a href="#">
+                              <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a5b_instagram-01.webp" alt="">
+                              <div class="overlay-icon"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                            <a href="#">
+                              <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a5a_instagram-02.webp" alt="">
+                              <div class="overlay-icon"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                            <a href="#">
+                              <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a59_instagram-03.webp" alt="">
+                              <div class="overlay-icon"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                            <a href="#">
+                              <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a58_instagram-04.webp" alt="">
+                              <div class="overlay-icon"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                            <a href="#">
+                              <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a57_instagram-05.webp" alt="">
+                              <div class="overlay-icon"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                            <a href="#">
+                              <img src="https://cdn.prod.website-files.com/657f6997d13b05b913955807/657f6998d13b05b913955a5c_instagram-06.webp" alt="">
+                              <div class="overlay-icon"><i class="fa-brands fa-instagram"></i></div>
+                            </a>
+                        </div>
+                          
+                                                
+                    </div>                                                            
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 newsAndPressFooter">
+            <div class="container-fluid">
+                <div class="row text-white p-4">
+                
+                    <!-- About Column -->
+                    <div class="col-12 col-md-4 border mb-4 mb-md-0 column-1">
+                        <h2 class="footer-heading">About</h2>
+                        <p>
+                            A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.
+                        </p>
+                        <a href="#" title="Read Full Story" class="read-more">Read Full Story</a>
+                    </div>
+          
+                    <!-- Newsletter Column -->
+                    <div class="col-12 col-md-4 text-center border border-start-0 mb-4 mb-md-0 column-2">
+                        <h2 class="mb-4 footer-heading">Newsletter</h2>
+                        <form action="" class="footer-form mx-auto">
+                            <input type="text" placeholder="Your Name" class="form-control mb-4">
+                            <input type="email" placeholder="Email address" class="form-control mb-4">
+                            <button type="submit" class="btn w-100">Subscribe</button>
+                        </form>
+                      
+                        <div class="social-icons d-flex justify-content-center gap-3 mt-3">
+                            <a href="#" class="social-link facebook">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                      
+          
+                    <!-- Navigation Column -->
+                    <div class="col-12 col-md-4 border-start-0 border text-end column-3">
+                        <h2 class="footer-heading">Navigation</h2>
+                        
+                        <!-- First line with 4 links -->
+                        <div class="footer-links d-flex flex-wrap justify-content-end">
+                            <a href="">All</a>
+                            <a href="">Cookware</a>
+                            <a href="">Gadgets</a>
+                            <a href="">Health & Beauty</a>
+                        </div>
+                    
+                        <!-- Second line with 3 links -->
+                        <div class="footer-links d-flex flex-wrap justify-content-end mt-2">
+                            <a href="">Hydration</a>
+                            <a href="">Pets</a>
+                            <a href="">Travel</a>
+                        </div>
+                    
+                        <!-- Third line with 3 links -->
+                        <div class="footer-links d-flex flex-wrap justify-content-end mt-2">
+                            <a href="">Contact</a>
+                            <a href="">Licensing</a>
+                            <a href="">Style Guide</a>
+                        </div>
+                    </div>
+                  
+          
+                </div>
+            </div>
+        </section>
+          
+        
+        
+        
+
+
+
+    <!-- GSAP & jQuery & font-awesome links -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- GSAP Core Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- GSAP Draggable Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+    <!-- GSAP SCROLL TRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- GSAP MotionPath Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+    <!-- gsap InertiaPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/InertiaPlugin.min.js"></script>
+
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Font-Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom js -->
+    <script src="assets/javascript/script.js" defer></script>
+
+    </body>
+</html>
