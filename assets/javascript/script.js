@@ -155,7 +155,7 @@ function setupBottomLastSliders() {
     });
 }
 
-if (currentPage.includes("/index.html") || currentPage === "/") {
+if (currentPage.includes("index.html") || currentPage === "/") {
     let myHeader = document.getElementById("header");
 
     window.addEventListener("scroll", function() {
@@ -751,7 +751,7 @@ if (currentPage.includes("/index.html") || currentPage === "/") {
 
   
 
-} else if(currentPage.startsWith('/brands/')) {
+} else {
     document.getElementById("goBack").addEventListener("click", function(event) {
         event.preventDefault();
         history.back();
