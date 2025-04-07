@@ -155,7 +155,7 @@ function setupBottomLastSliders() {
     });
 }
 
-if (currentPage.includes("index.html") || currentPage === "/") {
+if (currentPage.includes("/index.html") || currentPage === "/") {
     let myHeader = document.getElementById("header");
 
     window.addEventListener("scroll", function() {
